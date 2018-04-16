@@ -19,10 +19,6 @@ Options:
   -h, --help            show this help message and exit
   -s SLAVES, --slaves=SLAVES
                         Number of slaves to launch (default: 4)
-  -k KEY_PAIR, --key-pair=KEY_PAIR
-                        Key pair to use on instances
-  -i IDENTITY_FILE, --identity-file=IDENTITY_FILE
-                        SSH private key file to use for logging into instances
   -p PROFILE, --profile=PROFILE
                         If you have multiple profiles (AWS or boto config),
                         you can configure additional, named profiles by using
@@ -45,15 +41,6 @@ Options:
   -v YARN_VERSION, --yarn-version=YARN_VERSION
                         Version of YARN to use: 'X.Y.Z' or a specific git hash
                         (default: master)
-  --yarn-git-repo=YARN_GIT_REPO
-                        Github repo from which to checkout supplied commit
-                        hash (default: https://github.com/zhengqmark/yarn)
-  --yarn-ec2-git-repo=YARN_EC2_GIT_REPO
-                        Github repo from which to checkout yarn-ec2 (default:
-                        https://github.com/zhengqmark/yarn-ec2)
-  --yarn-ec2-git-branch=YARN_EC2_GIT_BRANCH
-                        Github repo branch of yarn-ec2 to use (default:
-                        master)
   -D [ADDRESS:]PORT     Use SSH dynamic port forwarding to create a SOCKS
                         proxy at the given local address (for use with login)
   --resume              Resume installation on a previously launched cluster
